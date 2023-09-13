@@ -1,0 +1,17 @@
+{
+    "name": "gomoru.su.screen-capture-utilities.editor",
+    "references": [
+        "GUID:9a37c7c04e301094caf288c3b0326cdd"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
