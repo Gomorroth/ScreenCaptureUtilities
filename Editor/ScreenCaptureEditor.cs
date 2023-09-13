@@ -33,7 +33,7 @@ namespace gomoru.su.ScreenCaptureUtilities
             {
                 if (GUILayout.Button("Capture"))
                 {
-                    var path = EditorUtility.SaveFilePanel("", "", $"{camera.gameObject.scene.name} {DateTime.Now:yyyy-MM-dd HH-mm-ss.fff}", "png");
+                    var path = Utils.ShowSavePanel(camera.gameObject.scene.name);
                     if (!string.IsNullOrEmpty(path))
                     {
                         camera.Capture((target as ScreenCapture).CaptureSettings, path);

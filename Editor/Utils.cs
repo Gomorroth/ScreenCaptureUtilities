@@ -7,11 +7,14 @@ using System.Threading.Tasks;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine.Rendering;
 using UnityEngine;
+using UnityEditor;
 
 namespace gomoru.su.ScreenCaptureUtilities
 {
     internal static class Utils
     {
+        public static string ShowSavePanel(string prefix) => EditorUtility.SaveFilePanel("Save", "", $"{prefix} {DateTime.Now:yyyy-MM-dd HH-mm-ss.fff}", "png");
+        
         public static void Capture(this Camera camera, in CaptureSettings settings, string path)
         {
             if (string.IsNullOrEmpty(path))
